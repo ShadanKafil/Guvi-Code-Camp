@@ -1,0 +1,100 @@
+for the given JSON iterate over all for loops (for, for in, for of, forEach)
+Create your own resume data in JSON format
+Read about the difference between window screen and document in javascript
+
+
+1.)var abc = [{
+    "id" : "Shadan", 
+    "msg"   : "Hi there this is me shadan kafil",
+    "task" : "types of loop",
+    "mail": "shadankafil223@gmail.com"
+},
+{
+    "id" : "Shaddy", 
+    "msg"   : "Hi everyone this is shaddy for you.)",
+    "task" : "types of loop ",
+    "mail": "shaddy223@gmail.com"
+}];
+//for loop
+for(var i = 0; i < abc.length; i++) {
+    var obj = abc[i];
+
+    console.log(obj.id);
+    console.log(obj.msg);
+    console.log(obj.task);
+    console.log(obj.mail);
+
+}
+//for Each
+json.forEach(function(obj) { console.log(obj.msg); });
+
+//for In
+for (var key in abc) {
+if (abc.hasOwnProperty(key)) {
+  console.log(abc[key].id);
+}
+}
+
+//for Of
+let text = "";
+for (let x of abc[key].id) {
+ text += x; 
+}
+ console.log(text);
+
+
+2.)
+  let myResume={
+    "basics": {
+      "name": "SHADAN KAFIL",
+      "email": "shadankafil223@gamil.com",
+      "phone": 9876543211,
+      "degree": "B.Com",
+      "location": {
+        "address": "123 LalGanj Road bithoor",
+        "postalCode": 208091,
+        "city": "Kanpur",
+        "state": "UTTAR PRADESH",
+        "country": "India"
+      },     
+    },
+    "work": [
+      {
+        "company": "Perigon Technologies Ptv. Ltd.",
+        "position": "Ui Developer",
+        "startDate": "1-03-2021",
+        "endDate": "Serving",
+        "summary": "i am the UI Developer handling various task and gaining lots of experience",
+      },
+    ],
+    "education": [
+      {
+        "institution": "J.S. University Shikohabad",
+        "department": "Commerce",
+        "studyType": "fulltime",
+        "batch start year": 2016,
+        "batch end year": 2019,
+        
+      }
+    ],
+    "skills": [
+      {
+        "name": "HTML,CSS,BOOTSTRAP,javascript, Angular",
+        "level": "Intermediate",
+        "project": [
+          "Developed different website from scratch"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "language": "Hindi, English",
+      }
+    ],
+    "interests": [
+      {
+        "name": "script writter,youtuber,",
+      }
+    ]
+  }
+  console.log(myResume);
